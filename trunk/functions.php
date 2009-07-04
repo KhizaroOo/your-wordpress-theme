@@ -60,7 +60,7 @@ function theme_widgets_init() {
 	// Area 1
   register_sidebar( array (
   'name' => 'Primary Widget Area',
-  'id' => 'primary-widget-area',
+  'id' => 'primary_widget_area',
   'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
   'after_widget' => "</li>",
 	'before_title' => '<h3 class="widget-title">',
@@ -70,7 +70,7 @@ function theme_widgets_init() {
 	// Area 2
   register_sidebar( array (
   'name' => 'Secondary Widget Area',
-  'id' => 'secondary-widget-area', 
+  'id' => 'secondary_widget_area', 
   'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
   'after_widget' => "</li>",
 	'before_title' => '<h3 class="widget-title">',
@@ -83,12 +83,13 @@ add_action( 'init', 'theme_widgets_init' );
 
 // Pre-set Widgets
 $preset_widgets = array (
-	'primary-aside'  => array( 'search', 'pages', 'categories', 'archives' ),
-	'secondary-aside'  => array( 'links', 'meta' )
+	'primary_widget_area'  => array( 'search', 'pages', 'categories', 'archives' ),
+	'secondary_widget_area'  => array( 'links', 'meta' )
 );
-if ( isset( $_GET['activated'] ) ) {
+if ( !isset( $_GET['activated'] ) ) {
 	update_option( 'sidebars_widgets', $preset_widgets );
 }
+// update_option( 'sidebars_widgets', NULL );
 
 
 // Check for static widgets in widget-ready areas
