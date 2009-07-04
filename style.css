@@ -12,15 +12,14 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 .
 */
 
-
-/* Import a basic layout */
-@import url('styles/2c-r.css');
-
 /* Reset default browser styles */
 @import url('styles/reset.css');
 
 /* Rebuild default browser styles */
 @import url('styles/rebuild.css');
+
+/* Import a basic layout */
+@import url('styles/2c-r.css');
 
 /* Basic WordPress Styles */
 @import url('styles/wp.css');
