@@ -1,0 +1,1 @@
+Browse and checkout the code for _How To Create a WordPress Theme_ the ThemeShaper [WordPress Theme Tutorial](http://themeshaper.com/wordpress-themes-templates-tutorial/). It's _your_ WordPress Theme.
